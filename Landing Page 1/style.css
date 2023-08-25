@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    /* position: sticky; */
+    top: 0px;
+}
+
+.NavBar {
+    height: 70px;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    box-shadow: 2px 3px 10px grey;
+    /* position: sticky; */
+}
+
+.icon {
+    width: 200px;
+    height: 70px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.logo {
+    /* color: blueviolet; */
+    color: rgb(255, 215, 0);
+    font-size: 40px;
+    float: left;
+    font-style: italic;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+/* .menu{
+    style: none;
+} */
+ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* position: relative; */
+    /* top: 25px; */
+}
+
+ul li {
+    list-style: none;
+    margin: 25px 25px 0;
+    font-size: 18px;
+}
+
+ul li a {
+    color: rgb(255, 215, 0);
+    font-weight: bold;
+    text-decoration: none;
+    /* padding-right: 2%; */
+}
+
+ul li a:hover {
+    color: goldenrod;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+ul li i {
+    padding-left: 7px;
+}
+
+.cla_quo {
+    color: rgb(255, 215, 0);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px 20px 0;
+    /* margin-right: 29px; */
+    cursor: pointer;
+}
+
+.cla_quo:hover {
+    color: goldenrod;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.cla_quo i {
+    padding-left: 7px;
+}
+
+.wrap_size {
+    height: 185px;
+    width: 10%;
+    top: 50px;
+    right: 54%;
+    background: gold;
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.wrap_size.open-menu {
+    max-height: 200px;
+    z-index: 20;
+}
+
+.inner_wrap {
+    background-color: rgb(254, 255, 250);
+    width: 91%;
+    height: 95%;
+    position: absolute;
+    margin: 5px;
+}
+
+.inner_wrap a {
+    text-decoration: none;
+}
+
+.inner_wrap h3 {
+    text-align: center;
+    margin: 3px;
+    color: rgb(83, 96, 115);
+    /* background-color: aquamarine; */
+}
+
+.inner_wrap h3:hover {
+    color: gold;
+    transition: 0.3s;
+    /* background-color: rgb(244, 225, 202); */
+    /* background-color: rgb(185, 183, 183); */
+    background-color: black;
+    font-size: 20px;
+}
+
+.inner_wrap hr {
+    height: 2px;
+    background-color: black;
+}
+
+/* Quotes css */
+
+.wrap_sizeQ {
+    height: 185px;
+    width: 10%;
+    top: 50px;
+    right: 44%;
+    background: gold;
+    position: absolute;
+    /* padding: 5px; */
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+.wrap_sizeQ.open-menu {
+    max-height: 400px;
+    z-index: 10;
+}
+
+.inner_wrapQ {
+    background-color: rgb(254, 255, 250);
+    width: 91%;
+    height: 95%;
+    position: absolute;
+    margin: 5px;
+}
+
+.inner_wrapQ a {
+    text-decoration: none;
+}
+
+.inner_wrapQ h3 {
+    text-align: center;
+    margin: 3px;
+    color: rgb(83, 96, 115);
+    /* background-color: aquamarine; */
+}
+
+.inner_wrapQ h3:hover {
+    color: rgb(53, 14, 133);
+    transition: 0.3s;
+    /* background-color: rgb(57, 57, 57); */
+    /* background-color: rgb(185, 183, 183); */
+    background-color: rgb(224, 215, 224);
+    font-size: 20px;
+}
+
+.inner_wrapQ hr {
+    height: 2px;
+    background-color: black;
+}
+
+/* Image */
+img {
+    height: 50%;
+    width: 100%;
+    opacity: 80%;
+}
+
+.image {
+    position: relative;
+    z-index: -1;
+    display: flex;
+    /* important */
+    /* background: linear-gradient(rgb(0,0,0,0.2), rgb(0,0,0,0.2)); */
+}
+
+.image-text {
+    position: absolute;
+    top: 24%;
+    left: 4.5%;
+    /* right: 22%; */
+    bottom: auto;
+    /* display: grid; */
+    /* place-content: center; */
+}
+
+.image-text span {
+    color: rgb(24, 130, 130);
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.image-text h3 {
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    /* position: flex; */
+}
+
+.image-text hr {
+    border: 1px solid black;
+    margin: 3px 100px;
+    width: 71%;
+}
+
+.heart {
+    font-size: 55px;
+    text-align: center;
+    color: red;
+    margin-bottom: 25px;
+}
+
+.lowerText {
+    font-size: 28px;
+    text-align: center;
+    background-color: gold;
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 50%;
+}
+
+/* End of image */
+
+
+.lowerTri {
+    /* background-color: whitesmokes; */
+    height: 350px;
+    justify-content: space-evenly;
+    display: flex;
+    border-radius: 505px;
+    background-color: antiquewhite;
+
+}
+
+.triText {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    background-color: whitesmokes;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.triText hr {
+    height: 4px;
+    background-color: #30c9e8;
+    margin: auto 45%;
+    box-shadow: 3px 3px 5px rgb(228, 227, 228);
+}
+
+.leaf {
+    /* display: flex; */
+    position: absolute;
+    height: 55px;
+    width: 40px;
+    background-color: #30c9e8;
+    border-radius: 120px 7px 120px 7px;
+    margin-left: 706px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px rgb(228, 227, 228);
+    /* transform: rotateX(20deg); */
+    /* right: 480px; */
+}
+
+.smallTri {
+    margin: 5px;
+    width: 19%;
+    height: 280px;
+    background-color: #76c2e2;
+    position: relative;
+    /* left: 10%; */
+    margin-top: 2%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgb(228, 227, 228);
+    border: 1px solid black;
+}
+
+.smallTri:hover {
+    /* box-shadow: 20px 20px 50px 10px rgb(240, 144, 214) inset; */
+    /* box-shadow: 20px 20px 50px 10px rgb(214, 208, 213) inset; */
+    border: 1px solid black;
+    box-shadow: none;
+}
+
+.triCircle {
+    background-color: rgb(222, 225, 208);
+    width: 44%;
+    height: 37%;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px 69px;
+}
+
+.triCircle i {
+    color: black;
+    font-size: 60px;
+    margin: 18px 18%;
+}
+
+.smallTriText h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.smallTriText p {
+    color: rgb(18, 15, 15);
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* End of services */
